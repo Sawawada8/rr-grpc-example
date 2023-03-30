@@ -1,0 +1,14 @@
+{
+    "require": {
+        "grpc/grpc": "^1.52",
+        "google/protobuf": "^3.22",
+        "spiral/roadrunner": "^2.12",
+        "nyholm/psr7": "^1.5",
+        "spiral/roadrunner-grpc": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ["php-out", "php-gout"]
+        }
+    }
+}
