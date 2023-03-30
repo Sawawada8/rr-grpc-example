@@ -14,6 +14,33 @@ services:
     tty: true
     working_dir: '/app'
 
+  ruby:
+    image: rr-grpc-client:1.0.0
+    build:
+      context: '.'
+      dockerfile: './docker/ruby/Dockerfile'
+    # ports:
+      # - 8889:9001
+      # http://localhost:8889
+    volumes:
+      - './:/app'
+    tty: true
+    working_dir: '/app'
+
+  protoc:
+    image: rr-grpc-protoc:1.0.0
+    build:
+      context: '.'
+      dockerfile: './docker/protoc/Dockerfile'
+    # ports:
+      # - 8889:9001
+      # http://localhost:8889
+    volumes:
+      - './:/app'
+    tty: true
+    working_dir: '/app'
+
+
   grpc-curl:
     image: fullstorydev/grpcurl:latest
     tty: true

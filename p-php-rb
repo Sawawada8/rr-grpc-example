@@ -1,0 +1,17 @@
+#!/bin/bash
+# protoc \
+#     --ruby_out=rb-out \
+#     --rury-grpc_out=rb-gout \
+#     service.proto
+
+
+# protoc \
+#     --php_out=pr-php-out \
+#     --php-grpc_out=pr-php-gout \
+#     service.proto
+
+# grpc_tools_ruby_protoc \
+protoc \
+    --ruby_out=pr-ruby-out \
+    --ruby-grpc_out=pr-ruby-gout \
+    service.proto
